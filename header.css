@@ -1,3 +1,13 @@
+:root {
+    --white: #F8F8F8;
+    --black: #161616;
+    --black_2: #050505;
+    --white_2: #ffffff;
+    --green: #9BB537;
+    --oragne: #EEA10C;
+    --gray: #cecdcd;
+}
+
 .list {
     list-style: none;
 }
@@ -43,7 +53,7 @@ img {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    background-color: rgba(248, 248, 248, 1);
+    background-color: var(--white);
 }
 
 .header-container {
@@ -62,11 +72,11 @@ img {
     font-size: 16px;
     line-height: 1.12;
     letter-spacing: -0.04em;
-    color: #9BB537;
+    color: var(--green);
 }
 
 .logo-link-span {
-    color: #050505;;
+    color: var(--black_2);
 }
 
 .header-btn {
@@ -77,13 +87,13 @@ img {
 
 .shopping-cart-btn {
     border: none;
-    background-color: rgba(248, 248, 248, 1);
+    background-color: var(--white);
     display: flex;
     justify-content: center;
 }
 
 .shopping-cart-pic:hover, .shopping-cart-pic:focus {
-    fill: rgba(155, 181, 55, 1);
+    fill: var(--green);
 }
 
 .switch {
@@ -92,14 +102,14 @@ img {
 
 .mobile-menu-open {
     border: none;
-    background-color: rgba(248, 248, 248, 1);
+    background-color: var(--white);
     display: flex;
     justify-content: center;
 }
 
 .mobile-menu-pic:hover,
 .mobile-menu-pic:focus {
-    fill: rgba(155, 181, 55, 1);
+    fill: var(--green);
 }
 
 /* ----------------------- MOBILE -------------------------- */
@@ -124,7 +134,7 @@ img {
     }
 
     .header-nav-link {
-        color: #050505;
+        color: var(--black_2);
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -132,7 +142,7 @@ img {
     }
 
     .current {
-        color: rgba(155, 181, 55, 1);
+        color: var(--green);
         font-weight: 500;
     }
 
@@ -169,7 +179,7 @@ img {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(206, 205, 205, 1);
+        background-color: var(--gray);
         -webkit-transition: 0.4s;
         transition: 0.4s;
     }
@@ -186,8 +196,8 @@ img {
         margin: auto 0;
         -webkit-transition: 0.4s;
         transition: 0.4s;
-        box-shadow: 0 0px 15px #2020203d;
-        background: rgba(248, 248, 248, 1);
+        box-shadow: 0 0px 15px var(--gray);
+        background: var(--white_2);
         background-repeat: no-repeat;
         background-position: center;
     }
