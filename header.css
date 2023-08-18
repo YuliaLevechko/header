@@ -1,0 +1,239 @@
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* -------------------------------- */
+
+.header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 2;
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.header-navigation {
+    display: none;
+}
+.header-logo-link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    color: #9BB537;
+}
+
+.logo-link-span {
+    color: #050505;;
+}
+
+.header-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.shopping-cart-btn {
+    border: none;
+    background-color: rgba(248, 248, 248, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.shopping-cart-pic:hover, .shopping-cart-pic:focus {
+    fill: rgba(155, 181, 55, 1);
+}
+
+.switch {
+    display: none;
+}
+
+.mobile-menu-open {
+    border: none;
+    background-color: rgba(248, 248, 248, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-menu-pic:hover,
+.mobile-menu-pic:focus {
+    fill: rgba(155, 181, 55, 1);
+}
+
+/* ----------------------- MOBILE -------------------------- */
+@media screen and (min-width: 375px) {
+    .header-container{
+        width: 375px;
+        padding: 20px;
+    }
+}
+/* ----------------------- TABLET -------------------------- */
+@media screen and (min-width: 768px){
+    .header-container {
+        width: 768px;
+        padding: 28px 32px;
+    }
+    .header-navigation {
+        display: flex;
+    }
+    .header-nav-list {
+        display: flex;
+        gap: 16px;
+    }
+
+    .header-nav-link {
+        color: #050505;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.25;
+    }
+
+    .current {
+        color: rgba(155, 181, 55, 1);
+        font-weight: 500;
+    }
+
+    .header-logo-link {
+        font-size: 18px;
+        letter-spacing: 1.11;
+    }
+
+    .mobile-menu-open {
+        display: none;
+    }
+
+    .header-btn {
+        gap: 18px;
+    }
+
+    .switch {
+    position: relative;
+    display: flex;
+    width: 46px;
+    height: 20px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(206, 205, 205, 1);
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 40px;
+        width: 40px;
+        left: 0px;
+        bottom: 4px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        box-shadow: 0 0px 15px #2020203d;
+        background: rgba(248, 248, 248, 1);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    input:checked+.slider {
+        background: linear-gradient(rgba(155, 181, 55, 1), rgba(155, 181, 55, 0.69));;
+        box-shadow: 7px 5px 15px rgba(22, 22, 22, 0.6);
+    }
+
+    input:focus+.slider {
+        box-shadow: 4px 4px 15px rgba(243, 243, 243, 0.25);
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(25px);
+        -ms-transform: translateX(25px);
+        transform: translateX(26px);
+        background: rgba(243, 243, 243, 1);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .slider.round {
+        border-radius: 60px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* ----------------------- DESK -------------------------- */
+@media screen and (min-width: 1280px) {
+
+    .header-container{
+        width: 1280px;
+        padding: 40px 100px;
+    }
+
+    .header-btn {
+        gap: 24px;
+    }
+}
+
+
