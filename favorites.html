@@ -85,26 +85,26 @@
       </div>
     </header>
     <main>
-      <section class="fav-container">
-        <div class="fav-image">
-          <picture class="">
+      <section class="favorites">
+        <div class="fav-container">
+          <picture class="fav-image">
             <source
-              srcset="./images/card-desc.jpg"
+              srcset="
+                ./images/card-desc-min.jpg 1x,
+                ./images/card-desc-min-2x  2x
+              "
               media="(min-width: 1280px)"
-              sizes="1080px 356px"
             />
             <source
-              srcset="./images/card-tab.jpg"
+              srcset="./images/card-tab-min.jpg 1x, ./images/card-tab-min-2x 2x"
               media="(min-width: 768px)"
-              sizes=""
             />
             <source
-              srcset="./images/card-mob.jpg"
+              srcset="./images/card-mob-min.jpg 1x, ./images/card-mob-min-2x 2x"
               media="(max-width: 767px)"
-              sizes=""
             />
 
-            <img src="default.png" alt="MDN" />
+            <img src="./images/card-mob-min.jpg" alt="tasty dish" />
           </picture>
         </div>
       </section>

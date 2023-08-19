@@ -1,28 +1,48 @@
-.fav-container {
+.favorites {
     width: 100%;
-    display: flex;
-    padding: 0 10px;
+    margin: 0 auto;
+
+}
+.fav-container {
     margin: 0 auto;
 }
+.fav-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
 
 /* --------------- MOBILE ------------------ */
 @media screen and (min-width: 375px) {
     .fav-container {
-        width: 375px;
+        width: 335px;
         padding: 0 20px;
+    }
+    .fav-image {
+        width: 335px;
+        height: 516px;
     }
 }
 /* --------------- tABLET ----------------- */
 @media screen and (min-width: 768px) {
     .fav-container {
-        width: 768px;
+        width: 704px;
         padding: 0 32px;
+    }
+    .fav-image {
+        width: 704px;
+        height: 356px;
     }
 }
 /* -------------- DESCTOP ------------------ */
 @media screen and (min-width: 1280px) {
     .fav-container {
-        width: 1280px;
+        width: 1080px;
         padding: 0 100px;
+    }
+    .fav-image {
+        width: 1080px;
+        height: 356px;
     }
 }
