@@ -85,8 +85,28 @@
       </div>
     </header>
     <main>
-      <section class="hero-container">
-        <div class="fav-image"></div>
+      <section class="fav-container">
+        <div class="fav-image">
+          <picture class="">
+            <source
+              srcset="./images/card-desc.jpg"
+              media="(min-width: 1280px)"
+              sizes="1080px 356px"
+            />
+            <source
+              srcset="./images/card-tab.jpg"
+              media="(min-width: 768px)"
+              sizes=""
+            />
+            <source
+              srcset="./images/card-mob.jpg"
+              media="(max-width: 767px)"
+              sizes=""
+            />
+
+            <img src="default.png" alt="MDN" />
+          </picture>
+        </div>
       </section>
     </main>
     <script src="./header.js"></script>
