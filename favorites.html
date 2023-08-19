@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./favorites.css" />
   </head>
   <body>
     <header class="header">
@@ -12,12 +13,10 @@
         <nav class="header-navigation">
           <ul class="header-nav-list list">
             <li class="header-nav-item">
-              <a href="./index.html" class="header-nav-link link current"
-                >Home</a
-              >
+              <a href="./index.html" class="header-nav-link link">Home</a>
             </li>
             <li class="header-nav-item">
-              <a href="./favorites.html" class="header-nav-link link"
+              <a href="./favorites.html" class="header-nav-link link current"
                 >Favorites</a
               >
             </li>
@@ -33,10 +32,10 @@
             </svg>
           </a>
           <!-- <button class="shopping-cart-btn" type="button">
-            <svg class="shopping-cart-pic" width="24" height="24">
-              <use href="./images/icons.svg#icon-shopping-cart"></use>
-            </svg>
-          </button> -->
+                <svg class="shopping-cart-pic" width="24" height="24">
+                <use href="./images/icons.svg#icon-shopping-cart"></use>
+                </svg>
+            </button> -->
           <label id="switch" class="switch switch-tab">
             <input
               type="checkbox"
@@ -63,12 +62,12 @@
           <nav class="nav-mob-menu">
             <ul class="mob-menu-list list">
               <li class="mobile-nav-item">
-                <a class="mobile-nav-link link current-mob" href="./index.html"
-                  >Home</a
-                >
+                <a class="mobile-nav-link link" href="./index.html">Home</a>
               </li>
               <li class="mobile-nav-item">
-                <a class="mobile-nav-link link" href="./favorites.html"
+                <a
+                  class="mobile-nav-link link current-mob"
+                  href="./favorites.html"
                   >Favorites</a
                 >
               </li>
@@ -85,6 +84,11 @@
         </label>
       </div>
     </header>
+    <main>
+      <section class="hero-container">
+        <div class="fav-image"></div>
+      </section>
+    </main>
     <script src="./header.js"></script>
     <script src="./js/mobile_menu.js"></script>
   </body>

@@ -167,6 +167,9 @@ body.dark {
     fill: var(--txt-color);
 }
 
+.mobile-menu-pic {
+    fill: var(--txt-color);
+}
 .mobile-menu-pic:hover,
 .mobile-menu-pic:focus {
     fill: var(--accent);
