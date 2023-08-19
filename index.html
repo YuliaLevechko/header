@@ -37,7 +37,7 @@
               <use href="./images/icons.svg#icon-shopping-cart"></use>
             </svg>
           </button> -->
-          <label id="switch" class="switch">
+          <label id="switch" class="switch switch-tab">
             <input
               type="checkbox"
               onchange="toggleTheme()"
@@ -46,7 +46,7 @@
             />
             <span class="slider round"></span>
           </label>
-          <button class="mobile-menu-open" type="button">
+          <button class="mobile-menu-open" data-menu-open type="button">
             <!-- <svg class="mobile-menu-pic" width="32" height="32">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg> -->
@@ -89,33 +89,39 @@
           </button>
         </div>
       </div>
-      <div class="mob-modal">
-        <button type="button" class="menu-close-btn">
-          <svg class="menu-close-pic" width="32" height="32">
-            <use href="./images/icons.svg#icon-menu-close-btn"></use>
-          </svg>
-        </button>
-        <nav class="nav-mob-menu">
-          <ul class="mob-menu-list list">
-            <li class="mobile-nav-item">
-              <a class="mobile-nav-link link" href="#home">Home</a>
-            </li>
-            <li class="mobile-nav-item">
-              <a class="mobile-nav-link link" href="#favorites">Favorites</a>
-            </li>
-          </ul>
-        </nav>
-        <label id="switch" class="switch-mob">
+      <div class="mob-modal is-hidden" data-menu>
+        <div class="modal-container">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-pic" width="32" height="32">
+              <use href="./images/icons.svg#icon-menu-close-btn"></use>
+            </svg>
+          </button>
+          <nav class="nav-mob-menu">
+            <ul class="mob-menu-list list">
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link link current-mob" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link link" href="./favorites.html"
+                  >Favorites</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <label class="switch-mob switch">
           <input
             type="checkbox"
             onchange="toggleTheme()"
             class="switch-input"
-            id="slider"
           />
           <span class="slider round"></span>
         </label>
       </div>
     </header>
+    <script src="./header.js"></script>
+    <script src="./js/mobile_menu.js"></script>
   </body>
-  <script src="./header.js"></script>
 </html>
