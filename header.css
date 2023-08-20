@@ -5,12 +5,14 @@
     --white_2: #ffffff;
     --green: #9BB537;
     --oragne: #EEA10C;
-    --gray: #cecdcd;
+    --gray: rgb(206, 205, 205);
 
     --bg-main: #F8F8F8;
     --txt-color: #050505;
     --bg-secondary: #E0E9F5;
     --accent: #9BB537;
+    --gray-color-btn: rgba(5, 5, 5, 0.30);;
+    --gray-color-btn-dark: rgba(255, 255, 255, 0.3);
 }
 
 .list {
@@ -87,6 +89,7 @@ body.light {
     --bg-mob-menu: #9BB537;
     --accent: #9BB537;
     --current-mob: #ffffff;
+    --gray-color-btn:rgba(5, 5, 5, 0.30);
 }
 
 body.dark {
@@ -95,6 +98,7 @@ body.dark {
     --bg-mob-menu: #050505;
     --accent: #9BB537;
     --current-mob:#9BB537;
+    --gray-color-btn:rgba(255, 255, 255, 0.3);
 }
 
 
@@ -217,8 +221,8 @@ body.dark {
     border: none;
     padding: 0;
     margin-left: auto;
-        transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-menu-list{
