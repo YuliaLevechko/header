@@ -16,6 +16,7 @@
     overflow: hidden;
 }
 
+
 /* --------------- MOBILE ------------------ */
 @media screen and (min-width: 375px) {
     .fav-container {
@@ -36,6 +37,11 @@
     .fav-image {
         width: 704px;
         height: 356px;
+    }
+    
+    .recipe-icon-pic {
+        width: 97px;
+        height: 83px;
     }
 }
 /* -------------- DESCTOP ------------------ */

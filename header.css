@@ -67,6 +67,18 @@ body {
     visibility: hidden;
     pointer-events: none;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+}
 /* -------------------------------- */
 
 body.light {
@@ -274,7 +286,7 @@ body.dark {
 }
 
 .switch-input:focus+.slider {
-    box-shadow: 4px 4px 15px rgba(243, 243, 243, 0.25);
+    box-shadow: 1px 1px 5px rgba(243, 243, 243, 0.25);
 }
 
 .switch-input:checked+.slider:before {
@@ -284,18 +296,19 @@ body.dark {
     background: var(--white);
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 4px 4px 15px 0px rgba(243, 243, 243, 0.25);
-    ;
+    box-shadow: 4px 4px 15px rgba(243, 243, 243, 0.25);
 }
 
 .slider.round {
     border-radius: 60px;
+    box-shadow: 4px 4px 15px rgba(243, 243, 243, 0.092);
 }
     
 .slider.round:before {
     border-radius: 50%;
     width: 20px;
     height: 20px;
+    box-shadow: 4px 4px 15px rgba(243, 243, 243, 0.092);
 }
 
 /* ----------------------- MOBILE -------------------------- */

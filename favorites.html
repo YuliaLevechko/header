@@ -87,25 +87,49 @@
     <main>
       <section class="favorites">
         <div class="fav-container">
-          <picture class="fav-image thumb">
-            <source
-              srcset="
-                ./images/card-desc-min.jpg 1x,
-                ./images/card-desc-min-2x  2x
-              "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="./images/card-tab-min.jpg 1x, ./images/card-tab-min-2x 2x"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="./images/card-mob-min.jpg 1x, ./images/card-mob-min-2x 2x"
-              media="(max-width: 767px)"
-            />
+          <div class="fav-hero">
+            <div class="static-block">
+            <h1 class="visually-hidden">Favorites</h1>
+            <picture class="fav-image thumb">
+              <source
+                srcset="
+                  ./images/card-desc-min.jpg 1x,
+                  ./images/card-desc-min-2x  2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/card-tab-min.jpg 1x,
+                  ./images/card-tab-min-2x  2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/card-mob-min.jpg 1x,
+                  ./images/card-mob-min-2x  2x
+                "
+                media="(max-width: 767px)"
+              />
 
-            <img src="./images/card-mob-min.jpg" alt="tasty dish" />
-          </picture>
+              <img src="./images/card-mob-min.jpg" alt="tasty dish" />
+            </picture>
+            </div>
+          <div class="block-for-empty">
+            <svg class="recipe-icon-pic" width="68" height="58">
+              <use href="./images/icons.svg#icon-elements"></use>
+            </svg>
+            <p class="message-for-empty">It appears that you haven't added any recipes to your favorites yet. To get started, you can add recipes that you like to your favorites for easier access in the future.</p>
+          </div>
+        </div>
+        <div class="fav-category-block">
+            <button class="fav-category-fltr-btn" type="button">All categories</button>
+            <div class="fav-category-div" id="category-filter-div">
+            </div>
+        </div>
+        <div class="fav-recipe-block">
+          <ul class="favorite-card-list"></ul>
         </div>
       </section>
     </main>
